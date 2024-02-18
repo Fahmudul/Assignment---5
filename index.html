@@ -16,6 +16,83 @@
             font-optical-sizing: auto;
             font-style: normal;
         }
+        .font-inter{
+            font-family: "Inter", sans-serif;
+        }
+        .vessel{
+            width: 90%;
+            max-width: 1170px;
+            margin: auto;
+        }
+        .vessel_2-0{
+            width: 90%;
+            max-width: 1440px;
+            margin: auto;
+        }
+        .shadow-down{
+            box-shadow: 0px 4px 0px 0px  #1DD100;
+        }
+        .title-head{
+            font-weight: bold;
+            font-size: 35px;
+            text-align: center;
+            font-family: "Raleway", sans-serif;
+        }
+        .b-radius{
+            /* border-radius: 20; */
+            position: relative;
+            width: 20px;
+            height: 200px;
+        }
+        .b-radius::after {
+            content: "";
+            position: absolute;
+            top: 10%;
+            bottom: 10%;
+            left: 50%;
+            border-left: 3px dotted #FFFFFF; /* Adjust border color and style as needed */
+          }
+        .g-radius{
+            /* border-radius: 20; */
+            position: relative;
+            width: 20px;
+            height: 200px;
+        }
+        .g-radius::after {
+            content: "";
+            position: absolute;
+            top: 10%;
+            bottom: 10%;
+            left: 50%;
+            border-left: 3px dotted #1DD100; /* Adjust border color and style as needed */
+          }
+          .coupon-bg{
+            --tw-bg-opacity: .54;
+            background-color: rgb(102 103 171 / var(--tw-bg-opacity));
+          }
+          .round-topLeft-bottomleft{
+            border-radius: 25px 0px 0px 25px;
+          }
+          .round-topRight-bottomRight{
+            border-radius: 0px 25px 25px 0px;
+          }
+          .dotted-line {
+            border-bottom: 1px dotted #000; /* 1px thickness, dotted style, black color */
+        }
+          .dotted-line2 {
+            border-right: 1px dotted #000; /* 1px thickness, dotted style, black color */
+        }
+        .seat-btn{
+            padding: 15px 40px;
+            background-color:#8692921d ;
+            border-radius: 10px;
+        }
+        
+        .carve-border-radius-top{
+            border-top-left-radius: 70px;
+            border-top-right-radius: 70px;
+            border-top: 2px solid #1DD100 ;
+        }
     </style>
 </head>
 
@@ -72,7 +149,7 @@
                 
                 <div class="hero-content text-center text-neutral-content">
                   <div class="max-w-md flex flex-col items-center">
-                    <h1 class="mb-5 font-extrabold text-6xl  w-[742px] leading-[80px] text-white">End-to-End Travel with <br> <span class="text-[#1dd100]">Greenline Paribahan</span> </h1>
+                    <h1 class="mb-5 font-extrabold text-6xl  lg:w-[742px] leading-[80px] text-white">End-to-End Travel with <br> <span class="text-[#1dd100]">Greenline Paribahan</span> </h1>
                     <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                     <button class="btn px-7 text-black bg-[#1dd100] border-none font-bold text-xl">Buy Tickets</button>
                   </div>
@@ -81,7 +158,229 @@
         </div>
         
     </header>
-    
+    <main>
+        <!-- ticket section -->
+        <section class="offer">
+             <!-- ticket counter -->
+  <div id="TicketCounter" class=" mt-28 bg-[#F7F8F8] vessel_2-0 carve-border-radius-top ">
+    <!-- first Step -->
+    <section class="pt-16 font-font-inter">
+      <h1 class="title-head">Greenline Paribahan</h1>
+      <p class="max-w-[700px] mx-auto text-center pt-6 text-gray-700">Bus ticket booking: Choose route, date, seats, pay
+        online. Receive e-ticket via email or app. Arrive at terminal, show ticket, board bus.</p>
+    </section>
+
+    <div class="vessel font-inter">
+
+      <section class="mx-auto">
+        <div class="coupons flex  items-center mt-14 mb-6  ">
+          <div class="bg-[#fff] -mr-[1px ]  w-[980px] rounded-2xl   p-7 h-[360px]  ">
+            <div class="flex  justify-between items-center">
+              <div class="flex items-center  gap-4">
+                <img class="h-[45px]" src="assets/bus-logo.png" alt="">
+                <div>
+                  <h3 class="text-[23px] font-bold font-raleway">Greenline Paribahan</h3>
+                  <p>Coach-D02-WEB || AC_Bussiness</p>
+                </div>
+              </div>
+              <div class=" rounded-xl flex items-center gap-2 px-4 bg-[#1cd10022] text-[#1DD100] py-2"><img
+                  src="images/seat-green.png" class="inline "><span id="totalSeatDecrease">40</span>Seats left</div>
+            </div>
+            <div class="bg-[#F7F8F8] rounded-3xl my-5 ">
+              <div class="flex justify-between px-7 py-5">
+                <h5>Route</h5>
+                <h4 class="font-bold">Dhaka-Sylhet</h4>
+              </div>
+              <div class="flex justify-between px-7 py-5">
+                <h5>Departure Time</h5>
+                <h4 class="font-bold">7:00 am</h4>
+              </div>
+              <div class="mt-4 flex justify-between px-7 pb-6">
+                <div class="bg-[#86929239] px-5 py-3 rounded-lg">
+                  <h5>Boarding Point - Laxmipur</h5>
+                </div>
+                <div class="bg-[#86929239] px-5 py-3 rounded-lg">
+                  <h5>
+                    Dropping Point - Bogura</h5>
+                </div>
+                <div class="bg-[#86929239] px-5 py-3 rounded-lg">
+                  <h5>Est. Time - 11 Hour</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-[#fff]   h-[360px]">
+            <img src="assets/info-devider.png" class="h-full" alt="">
+          </div>
+          <div
+            class="bg-[#fff] w-[240px]  -ml-[1px  ] flex flex-col justify-center items-center round-topRight-bottomRight space-y-3 h-[360px]">
+            <img src="images/fare.png" alt="">
+            <h1 class="text-2xl font-extrabold font-raleway">550 Taka</h1>
+            <p>Per Seat</p>
+          </div>
+        </div>
+      </section>
+      <!-- second step -->
+
+
+      <section class="flex justify-center  ">
+        <div class="dotted-line2 W-[700px] bg-white p-7 rounded-3xl">
+          <h3 class="dotted-line font-bold text-xl pb-4">Select Your Seat</h3>
+          <div class="flex justify-between dotted-line w-full py-5">
+            <h5 class="flex gap-2"><img src="images/seat-gray.png" alt="">Available</h5>
+            <p class="text-[#1DD100] font-bold"><img src="images/seat-green-filled.png" class="inline "> Selected</p>
+          </div>
+          <button class="float-right  mt-3 py-3 px-9 rounded-2xl text-xl bg-[#86929239]"><svg width="32.000000" height="32.000000" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <desc>
+                    Created with Pixso.
+            </desc>
+            <defs>
+                <clipPath id="clip6_130">
+                    <rect id="tabler-icon-steering-wheel" width="32.000000" height="32.000000" fill="white" fill-opacity="0"/>
+                </clipPath>
+            </defs>
+            <rect id="tabler-icon-steering-wheel" width="32.000000" height="32.000000" fill="#FFFFFF" fill-opacity="0"/>
+            <g clip-path="url(#clip6_130)">
+                <path id="Vector" d="M4.91333 20.5922C5.5166 22.0481 6.40039 23.371 7.51465 24.4853C8.62891 25.5996 9.9519 26.4835 11.4077 27.0865C12.8638 27.6896 14.4241 28 16 28C17.5759 28 19.1362 27.6896 20.5923 27.0865C22.0481 26.4835 23.3711 25.5996 24.4854 24.4853C25.5996 23.371 26.4834 22.0481 27.0867 20.5922C27.6897 19.1363 28 17.5759 28 16C28 14.4241 27.6897 12.8637 27.0867 11.4078C26.4834 9.9519 25.5996 8.62903 24.4854 7.51471C23.3711 6.40042 22.0481 5.51651 20.5923 4.91345C19.1362 4.31039 17.5759 4 16 4C14.4241 4 12.8638 4.31039 11.4077 4.91345C9.9519 5.51651 8.62891 6.40042 7.51465 7.51471C6.40039 8.62903 5.5166 9.9519 4.91333 11.4078C4.3103 12.8637 4 14.4241 4 16C4 17.5759 4.3103 19.1363 4.91333 20.5922ZM14.1145 17.8856C14.6145 18.3857 15.2927 18.6667 16 18.6667C16.7073 18.6667 17.3855 18.3857 17.8855 17.8856C18.3857 17.3855 18.6667 16.7072 18.6667 16C18.6667 15.2928 18.3857 14.6145 17.8855 14.1144C17.3855 13.6143 16.7073 13.3333 16 13.3333C15.2927 13.3333 14.6145 13.6143 14.1145 14.1144C13.6143 14.6145 13.3333 15.2928 13.3333 16C13.3333 16.7072 13.6143 17.3855 14.1145 17.8856ZM16 18.6667L16 28M13.3333 16L4.33325 13.3333M18.6667 16L27.6667 13.3333" stroke="#030712" stroke-opacity="0.700000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+            </g>
+        </svg>
+        </button>
+          <div></div>
+          <div onclick=""  class="seats mt-20 ">
+
+
+            <div class="flex justify-between space-x-10 items-center font-semibold text-gray-500">
+              <p>A</p>
+              <button class="seat-btn" id="A1">A1</button>
+              <button class="seat-btn" id="A2">A2</button>
+              <button class="seat-btn" id="A3">A3</button>
+              <button class="seat-btn" id="A4">A4</button>
+            </div>
+            <div class="flex justify-between space-x-10 items-center font-semibold text-gray-500  mt-4">
+              <p>B</p>
+              <button class="seat-btn" id="B1">B1</button>
+              <button class="seat-btn" id="B2">B2</button>
+              <button class="seat-btn" id="B3">B3</button>
+              <button class="seat-btn" id="B4">B4</button>
+            </div>
+            <div class="flex justify-between space-x-10 items-center font-semibold text-gray-500  mt-4">
+              <p>C</p>
+              <button class="seat-btn" id="C1">C1</button>
+              <button class="seat-btn" id="C2">C2</button>
+              <button class="seat-btn" id="C3">C3</button>
+              <button class="seat-btn" id="C4">C4</button>
+            </div>
+            <div class="flex justify-between space-x-10 items-center font-semibold text-gray-500  mt-4">
+              <p>D</p>
+              <button class="seat-btn" id="D1">D1</button>
+              <button class="seat-btn" id="D2">D2</button>
+              <button class="seat-btn" id="D3">D3</button>
+              <button class="seat-btn" id="D4">D4</button>
+            </div>
+            <div class="flex justify-between space-x-10 items-center font-semibold text-gray-500  mt-4">
+              <p>E</p>
+              <button class="seat-btn" id="E1">E1</button>
+              <button class="seat-btn" id="E2">E2</button>
+              <button class="seat-btn" id="E3">E3</button>
+              <button class="seat-btn" id="E4">E4</button>
+            </div>
+            <div class="flex justify-between space-x-10 items-center font-semibold text-gray-500 mt-4">
+              <p>F</p>
+              <button class="seat-btn" id="F1">F1</button>
+              <button class="seat-btn" id="F2">F2</button>
+              <button class="seat-btn" id="F3">F3</button>
+              <button class="seat-btn" id="F4">F4</button>
+            </div>
+            <div class="flex justify-between space-x-10 items-center font-semibold text-gray-500  mt-4">
+              <p>G</p>
+              <button class="seat-btn" id="G1">G1</button>
+              <button class="seat-btn" id="G2">G2</button>
+              <button class="seat-btn" id="G3">G3</button>
+              <button class="seat-btn" id="G4">G4</button>
+            </div>
+            <div class="flex justify-between space-x-10 items-center font-semibold text-gray-500  mt-4">
+              <p>H</p>
+              <button class="seat-btn" id="H1">H1</button>
+              <button class="seat-btn" id="H2">H2</button>
+              <button class="seat-btn" id="H3">H3</button>
+              <button class="seat-btn" id="H4">H4</button>
+            </div>
+            <div class="flex justify-between space-x-10 items-center font-semibold text-gray-500  mt-4">
+              <p>I</p>
+              <button class="seat-btn" id="I1">I1</button>
+              <button class="seat-btn" id="I2">I2</button>
+              <button class="seat-btn" id="I3">I3</button>
+              <button class="seat-btn" id="I4">I4</button>
+            </div>
+            <div class="flex justify-between space-x-10 items-center font-semibold text-gray-500  mt-4">
+              <p>J</p>
+              <button class="seat-btn" id="J1">J1</button>
+              <button class="seat-btn" id="J2">J2</button>
+              <button class="seat-btn" id="J3">J3</button>
+              <button class="seat-btn" id="J4">J4</button>
+            </div>
+
+
+
+          </div>
+        </div>
+        <div class="p-7 bg-white w-[470px]">
+          <h3 class=" mb-7 font-bold text-xl">Select Your Seat</h3>
+          <div class="bg-[#8692921d] p-7 rounded-xl">
+            <div>
+              <div class="flex justify-between dotted-line pb-1">
+                <h5 class="font-bold ">Seat <span id="selected_seat_number" class="text-[#1DD100]">0</span></h5>
+                <h5 class="font-bold ">Class</h5>
+                <h5 class="font-bold ">Price</h5>
+              </div>
+              <div id="chosen_seats" class=" dotted-line pb-5">
+                <div class="flex justify-between pt-3">
+                  <h5 class="  text-sm ">C2</h5>
+                  <h5 class="  text-sm ">Economy</h5>
+                  <h5 class="  text-sm ">550</h5>
+                </div>
+              </div>
+              <div class="flex justify-between pt-2 text-sm font-bold">
+                <h6>Total Price</h6>
+                <h6>BDT 1100</h6>
+              </div>
+              <div class="flex justify-center mt-4">
+                <input type="text" placeholder="Have any coupons?" class="flex-1 rounded-lg px-4 py-3">
+                <button class="px-5  bg-[#1DD100] rounded-lg text-white ">Apply</button>
+              </div>
+              <div class="flex font-bold text-sm justify-between mt-3">
+                <h5>Grand Total</h5>
+                <h5>BDT 1100</h5>
+              </div>
+
+            </div>
+          </div>
+          <div>
+            <h4 class="font-bold text-sm py-3">Passsenger Name*</h4>
+            <input type="text" name="" id="" placeholder="Enter your name"
+              class="px-4 w-full py-2 border-[1px]  rounded-md">
+          </div>
+          <div>
+            <h4 class="font-bold text-sm py-3">Passsenger Number*</h4>
+            <input type="number" name="" id="" placeholder="Enter your phone number" required
+              class="px-4 w-full py-2 border-[1px]  rounded-md">
+          </div>
+          <div>
+            <h4 class="font-bold text-sm py-3">Email ID</h4>
+            <input type="email" name="" id="" placeholder="Enter your email id"
+              class="px-4 w-full py-2 border-[1px]  rounded-md">
+          </div>
+          <button class="text-white bg-[#1DD100] w-full rounded-xl py-3 mt-6">Next</button>
+          <div class="flex justify-between pt-5">
+            <p class="underline text-gray-500">Terms and Conditions</p>
+            <p class="underline text-gray-500">Cancellation Policy</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+        </section>
+    </main>
     
 </body>
 
